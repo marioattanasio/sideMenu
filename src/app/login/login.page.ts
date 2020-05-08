@@ -16,12 +16,12 @@ export class LoginPage implements OnInit {
   }
 
 
-  ionViewWillEnter() {
+ /* ionViewWillEnter() {
     this.menu.enable(false);
-   }
+   }*/
 
    goAnOtherPage(){
- this.router.navigate(['/folder/Inbox']);
+ this.router.navigate(['/menu']);
 
    }
 

@@ -13,12 +13,14 @@ export class FolderPage implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute,public menu: MenuController) { }
 
+  
+
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
   }
 
-  ionViewWillEnter() {
+  /*ionViewWillEnter() {
     this.menu.enable(true);
-   }
+   }*/
 
 }

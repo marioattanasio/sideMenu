@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import {  MenuController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
+import { AuthenticationService } from './../services/authentication.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -10,20 +12,23 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  constructor(public menu: MenuController,private router: Router) {}
+  constructor(public menu: MenuController,private router: Router, private authService: AuthenticationService) {}
 
   ngOnInit() {
   }
 
 
- /* ionViewWillEnter() {
+ /*ionViewWillEnter() {
     this.menu.enable(false);
+   }
+
+  goAnOtherPage(){
+    this.router.navigate(['/menu']);
    }*/
 
-   goAnOtherPage(){
- this.router.navigate(['/menu']);
-
-   }
+   login() {
+    this.authService.login();
+  }
 
 
 }

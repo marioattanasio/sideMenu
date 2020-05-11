@@ -22,8 +22,6 @@ export class MenuPage implements OnInit {
     private menuCtrl: MenuController,
     private router: Router) { }
 
- 
-
 
 
  public selectedIndex = 0;
@@ -34,8 +32,8 @@ export class MenuPage implements OnInit {
       icon: 'mail'
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
+      title: 'Page 2',
+      url: '/menu/page2',
       icon: 'paper-plane'
     },
   

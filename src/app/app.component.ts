@@ -4,7 +4,7 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-import {MenuController} from '@ionic/angular';
+
 import {  Router } from '@angular/router';
 import { AuthenticationService } from './services/authentication.service'; 
 
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
 
       this.authenticationService.authenticationState.subscribe(state => {
         if (state) {
-          this.router.navigate(['/menu/page1']);
+          this.router.navigate(['menu/page1']);
         } else {
           this.router.navigate(['login']);
         }

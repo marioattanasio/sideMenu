@@ -1,25 +1,38 @@
 .loginPage{
 
---background: url(../../assets/img/matrix.jpg) 0 0/100% 100% no-repeat;
+--background: url(../../assets/img/bg.jpg) 0 0/100% 100% no-repeat;
 
 }
 
-.title{
+.backgroundTitle{
 
-text-shadow: 0 0 10px rgba(0,0,0,0.8);
-background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(#ffffff, 0));
-
+--background: transparent;
+color: white;
+//font: 150px Arial, sans-serif;
 }
 
-.prova{
+.fontTitle{
 
-    
-    
-    position: relative;
-    
-    
-    
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(#ffffff, 0));
+    font: 50px Wedding Gothic ATF Book;
+}
 
+.card{
 
+    border: 0px solid transparent;
+    border-radius: 10px;
+}
+
+.headerCard{
+
+    background-color: rgb(33,150,243);
+}
+
+.buttonLogin{
+
+    //color: rgb(33,150,243);
+}
+
+ion-card-title{
+
+    color: white;
 }

@@ -1,25 +1,16 @@
 .loginPage{
-
---background: url(../../assets/img/matrix.jpg) 0 0/100% 100% no-repeat;
-
+    --background: url(../../assets/img/bg.jpg) 0 0/100% 100% no-repeat;
 }
 
 .title{
-
-text-shadow: 0 0 10px rgba(0,0,0,0.8);
-background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(#ffffff, 0));
-
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(#ffffff, 0));
 }
 
 .prova{
+    --background: transparent;
+}
 
-    
-    
-    position: relative;
-    
-    
-    
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(#ffffff, 0));
-
-
+.font{
+    font: 50px Wedding Gothic ATF Book;
 }

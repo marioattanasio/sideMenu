@@ -12,6 +12,11 @@ import { AuthenticationService } from './../services/authentication.service';
 })
 export class LoginPage implements OnInit {
 
+  user : {
+    email : "kk@String"
+    password : "1234"
+  }
+
   constructor(public menu: MenuController,private router: Router, private authService: AuthenticationService) {}
 
   ngOnInit() {
@@ -27,7 +32,7 @@ export class LoginPage implements OnInit {
    }*/
 
    login() {
-    this.authService.login();
+    this.authService.login(this.user);
   }
 
 
